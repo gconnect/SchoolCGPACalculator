@@ -9,13 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SignupScreen"
+            android:label="CGPA Calculator"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".StudentRecord" />
+        <activity
+            android:name=".NavigationScreen"
+            android:label="@string/title_activity_navigation_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TabbedScreen"
+            android:label="@string/title_activity_tabbed_screen"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

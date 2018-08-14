@@ -4,8 +4,84 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarStyle">@style/AppTheme.GreenStatusBar</item>
+
+
     </style>
 
+    <style name="AppTheme.GreenStatusBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">@color/colorGreen</item>
+    </style>
+
+    <style name="edit_text_input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+    </style>
+
+    <style name="textView_heading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Headline</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+    </style>
+
+    <style name="button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/colorWhtie</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/proceed_button</item>
+    </style>
+
+    <style name="spinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:prompt">@string/spinnerDuration</item>
+        <item name="android:entries">@array/courseDuration</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+    </style>
+
+    <style name="textView_subHead">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Subhead</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+    </style>
+
+    <style name="radiogroup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+    </style>
+
+    <style name="radiobuttons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="yearly_textview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:textColor">@color/colorWhtie</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/textview_background</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

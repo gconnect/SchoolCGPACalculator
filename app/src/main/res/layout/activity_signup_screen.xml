@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".SignupScreen">
+
+    <TextView
+        android:id="@+id/studentDetatails"
+        android:text="@string/student_details"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/textView_heading" />
+    <EditText
+        android:id="@+id/fullName"
+        app:layout_constraintTop_toBottomOf="@id/studentDetatails"
+        android:hint="@string/full_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        style="@style/edit_text_input" />
+
+    <TextView
+        android:id="@+id/category_institution"
+        android:text="Category of Institution"
+        app:layout_constraintTop_toBottomOf="@+id/fullName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        style="@style/textView_subHead" />
+    <RadioGroup
+        android:id="@+id/select_institution"
+        app:layout_constraintTop_toBottomOf="@id/category_institution"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        style="@style/radiogroup">
+
+        <RadioButton
+            android:id="@+id/university"
+            android:text="@string/university"
+            style="@style/radiobuttons" />
+        <RadioButton
+            android:id="@+id/polytechnic"
+            style="@style/radiobuttons"
+            android:text="@string/polytechnic"/>
+        <RadioButton
+            style="@style/radiobuttons"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/college_of_education"/>
+    </RadioGroup>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_institution"
+        app:layout_constraintTop_toBottomOf="@id/select_institution"
+        android:hint="@string/name_of_institution"
+        style="@style/edit_text_input" />
+
+
+    <EditText
+        android:id="@+id/faculty"
+        app:layout_constraintTop_toBottomOf="@id/name_institution"
+        android:hint="@string/faculty"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        style="@style/edit_text_input" />
+    <EditText
+        android:id="@+id/department"
+        app:layout_constraintTop_toBottomOf="@id/faculty"
+        android:hint="@string/department"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        style="@style/edit_text_input" />
+
+    <Spinner
+        android:id="@+id/course_duration_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/department"
+        app:layout_constraintLeft_toLeftOf="parent"
+        style="@style/spinner">
+    </Spinner>
+
+    <Button
+        android:id="@+id/proceed"
+        app:layout_constraintTop_toBottomOf="@id/course_duration_spinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Proceed>>>"
+        style="@style/button"
+        android:onClick="proceed">
+    </Button>
+
+
+</android.support.constraint.ConstraintLayout>
